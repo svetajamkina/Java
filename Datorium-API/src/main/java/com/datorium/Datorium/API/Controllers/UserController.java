@@ -1,6 +1,7 @@
 package com.datorium.Datorium.API.Controllers;
 
 import com.datorium.Datorium.API.DTO.User;
+import com.datorium.Datorium.API.DTOs.UserUpdateRequest;
 import com.datorium.Datorium.API.Services.UserService;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,8 +36,8 @@ public class UserController {
     }
 
     @PostMapping("/update")
-    public User update(@RequestBody int userIndex, @RequestBody User user){
-        return userService.update(userIndex, user);
+    public User update(@RequestBody UserUpdateRequest updateRequest){
+        return userService.update(updateRequest.userIndex, updateRequest.user);
     }
 
 }
