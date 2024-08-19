@@ -34,6 +34,11 @@ public class UserController {
         return userService.get();
     }
 
+    @PostMapping("/update")
+    public User update(@RequestBody int userIndex, @RequestBody User user){
+        return userService.update(userIndex, user);
+    }
+
 }
 
 

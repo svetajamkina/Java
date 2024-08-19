@@ -29,7 +29,7 @@ public class UserService {
         return userRepo.get();
     }
 
-    public User update(int userIndex, User updateUserDTO){
-        return userRepo.update(userIndex, updateUserDTO);
-    }
+   public User update(int userIndex, User updateUserDTO){
+       return userRepo.update(userIndex, updateUserDTO);
+   }
 }

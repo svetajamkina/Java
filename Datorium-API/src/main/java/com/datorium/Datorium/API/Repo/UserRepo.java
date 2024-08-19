@@ -21,10 +21,13 @@ public class UserRepo {
     //}
 
     public List<User> get(){
+
         return users;
     }
-    /*public User update(int userIndex, User updateUserDTO){
+    public User update(int userIndex, User updateUserDTO){
         var user = users.get(userIndex);
         user.name = updateUserDTO.name;
-        return user;*/
+        return user;
+    }
 }
+
